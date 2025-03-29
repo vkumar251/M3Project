@@ -1,0 +1,92 @@
+/* CONTENTS OF THIS STYLE SHEET:
+
+1) General
+2) Navigation Bar
+3) Page Designs & Layouts
+4) Classes */
+
+/* General */
+body
+{
+    background-color: rgba(0, 213, 255, 0.244); /* Set webpage background */
+    font-family: Arial; /* Set default webpage font */
+    padding: 0.5cm; /* Add spacing around webpage */
+}
+h1
+{
+    font-size: 30px; /* Set h1 font size */
+    font-family: Arial; /* Set h1 font to Arial */
+    color: rgb(0, 117, 51); /* Set default h1 colour */
+    display: flex; /* Flex display is required for justify-content to work */
+    justify-content: center; /* Align heading to centre */
+}
+p
+{
+    font-size: 20px; /* Set default font size for paragraphs */
+    font-family: Arial; /* Set paragraph fonts to Arial */
+}
+
+/* Navigation Bar */
+nav 
+{
+    position: fixed; /* Keep navigation bar always displayed on top */
+    top: 0; /* Reset top position */
+    left: 0; /* Reset left position */
+    width: 100%; /* Set navigation width */
+    padding: 10px; /* Add spacing */
+    z-index: 1000; /* Always overlay navigation on top of other elements */
+
+    background-color: rgb(255, 145, 0); /* Set background colour */
+    box-shadow: 0px 10px 10px rgb(73, 73, 73); /* Add shadow - values: [h-offset] [v-offset] [blur radius] [colour] */
+}
+nav ul
+{
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    display: flex; /* Make navigation responsive on other devices */
+    justify-content: right; /* Align list to the right side */
+}
+nav li
+{
+    margin: 0; /* Reset margin */
+}
+nav a
+{
+    font-family: Arial; /* Set font to Arial */
+    text-decoration: none; /* Remove underlines from hyerlinks */
+}
+nav a:hover
+{
+    background-color: white;
+}
+
+/* Page Designs & Layouts */
+section
+{
+}
+div
+{
+    background-color: rgba(255, 174, 108, 0.371); /* Set background colour */
+
+    padding-top: 0.25cm; /* Spacing between top border */
+    padding-bottom: 0.25cm; /* Spacing between bottom border */
+    padding-left: 1cm; /* Spacing between left border */
+    padding-right: 1cm; /* Spacing between right border */
+
+    border-width: 5px; /* Set border width */
+    border-color: black; /* Set border colour */
+    border-style: solid; /* Set border style: solid, dotted, dashed, double, groove, ridge, inset, outset */
+    border-radius: 20px; /* Add curves around border corners */
+}
+
+/* Classes */
+.classX
+{
+}
+.classY
+{
+}
+.classZ
+{
+}
