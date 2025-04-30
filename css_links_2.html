@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>CSS Links & Buttons | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            h1 {font-size: 40px; padding: 2rem; text-align: center; color: #c800cf; text-shadow: 5px 5px 3px #646464;}
+            h2 {font-size: 30px; padding: 0rem 0rem 2rem 0rem; color: #00ffea; text-shadow: 5px 5px 0px #1631ad;}
+            h3, p {font-size: 20px;}
+            body {font-family: Arial; background-color: #c2c2c2;}
+            header
+            {
+                background-color: #000292;
+                border: 5px outset #ff0000;
+                border-radius: 20px;
+                outline: 5px outset #ff00dd;
+                outline-offset: 15px;
+                max-width: 70%;
+                margin: 3rem auto;
+            }
+            section
+            {
+                background-color: #002506;
+                border: 5px solid #ffee00;
+                border-radius: 20px;
+                outline: 5px solid #ffa600;
+                color: white;
+                margin: 3rem;
+                max-width: 70%;
+                margin: 2rem auto;
+                padding: 2rem;
+            }
+            section a 
+            {
+                font-size: 20px;
+                font-weight: 700px;
+                color: #ff00ea;
+                text-align: center;
+                text-decoration: none;
+            }
+            .section1 p {padding-bottom: 3rem;}
+            .section1 a {background-color: #150031; padding: 1rem; border: 3px solid white; border-radius: 10px;}
+            .section1 a:hover, .section1 a:focus {color: #1900ff; background-color: #410041;}
+            .section1 a:active {color: #ff0000;}
+
+            .section2 p {padding-bottom: 1rem;}
+            .section2 button
+            {
+                border: 3px solid #ff00ff;
+                border-radius: 20px;
+                background-color: #00ff22;
+                font-size: 20px;
+                padding: 1rem 2rem;
+            }
+            .section2 button a {color: red;}
+            .section2 button a:hover, .section2 button a:focus {color: blue;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Links & Buttons</h1>
+        </header>
+        <main>
+            <section class="section1">
+                <h2>Section Element</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quisquam. Doloremque maiores saepe libero tempore molestiae, 
+                    velit cupiditate necessitatibus quidem eligendi, officiis laudantium itaque eaque, ab quas facilis consectetur aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quisquam. Doloremque maiores saepe libero tempore molestiae, 
+                    velit cupiditate necessitatibus quidem eligendi, officiis laudantium itaque eaque, ab quas facilis consectetur aspernatur.
+                </p>
+                <a href="#">Click Here</a>
+            </section>
+            <section class="section2">
+                <h2>Buttons</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quisquam. Doloremque maiores saepe libero tempore molestiae, 
+                    velit cupiditate necessitatibus quidem eligendi, officiis laudantium itaque eaque, ab quas facilis consectetur aspernatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quisquam. Doloremque maiores saepe libero tempore molestiae, 
+                    velit cupiditate necessitatibus quidem eligendi, officiis laudantium itaque eaque, ab quas facilis consectetur aspernatur.
+                </p>
+                <button><a href="#">Click Me</a></button>
+            </section>
+<!--             <section class="section3">
+            </section>
+            <section class="section4">
+            </section> -->
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

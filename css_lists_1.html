@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>CSS Lists | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            /* Reset */
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            /* General */
+            h1 {font-size: 40px;}
+            h2 {font-size: 30px;}
+            h3, p {font-size: 20px;}
+            header {background-color: #525151; padding-bottom: 3rem;}
+            body {font-family: Arial; background-color: #666666;}
+            /* Navigation */
+            nav ul {font-size: 20px; padding: 1rem;}
+            nav ul li {float: right; list-style-type: none; margin-inline: 1rem;}
+            nav ul li a {padding: 0.5rem 2rem; color: #ff4800; background-color: #6db1ff; border: 5px solid #8f00b3; text-decoration: none; display: block;}
+            nav ul li a:hover, 
+            nav ul li a:focus {background-color: #003a57; border: 5px solid #00ff00;}
+            /* Lists */
+            main ul {font-size: 40px; padding-left: 2rem;}
+            main ul li {list-style: inside; list-style-type: square;}
+            main ul li:first-child {padding-top: 4rem;}
+            main ul li:last-child {padding-bottom: 4rem;}
+            main ol {font-size: 40px; padding-left: 2rem;}
+            main ol li {list-style: inside; list-style-type: upper-alpha;}
+            main ol li:last-child {padding-bottom: 4rem;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav> <!--Navigation-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <ul> <!--Unordered list-->
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Water</li>
+                <li>Chocolate</li>
+                <li>Baking powder</li>
+            </ul>
+            <ol> <!--Ordered list-->
+                <li>Apples</li>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Sugar</li>
+                <li>Tomatoes</li>
+            </ol>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

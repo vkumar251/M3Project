@@ -1,0 +1,18 @@
+/* External fonts */
+/* Google fonts: https://fonts.google.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap'); /* Pinyon script */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap'); /* Fuzzy bubbles */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap'); /* Finger paint */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap'); /* Fascinate inline */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap'); /* Borel */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap'); /* Cabin sketch */
+
+.f-pinyon { font-family: "Pinyon Script", cursive; font-style: normal;}
+.f-fuzzy_bubbles { font-family: "Fuzzy Bubbles", sans-serif; font-style: normal; }
+.f-fuzzy_bubbles-bold { font-family: "Fuzzy Bubbles", sans-serif; font-weight: 1000; font-style: normal; }
+.f-finger_paint { font-family: "Finger Paint", sans-serif; font-style: normal; }
+.f-fascinate_inline { font-family: "Fascinate Inline", system-ui; font-style: normal; }
+.f-borel { font-family: "Borel", cursive; font-weight: 400; word-spacing: 4px; font-style: normal; }
+.f-cabin-sketch { font-family: "Cabin Sketch", sans-serif; font-weight: 400; font-style: normal; }
+.f-cabin-sketch-bold { font-family: "Cabin Sketch", sans-serif; font-weight: 700; font-style: normal; }

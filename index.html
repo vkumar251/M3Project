@@ -1,78 +1,154 @@
 <!DOCTYPE html>
-<html lang="en"> <!--Set default language to English-->
+<html lang="en">
     <head>
-        <link rel="stylesheet", href="css/style.css"> <!--Import style.css into page-->
-        <meta charset="UTF-8"> <!--Encode unicode transformation format to 8, to make it accessible for all languages-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Optimise page to make it accessible
-        on smartphones and other electronic devices-->
-        <title>Index | My Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Index | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            h1 {font-size: 60px; text-align: center;}
+            h2 {font-size: 40px; color: black;}
+            h3, p {font-size: 17px;}
+            body {font-family: Arial; background-color: #061a00; color: white;}
+            /* Header and Navigation */
+            header {background-color: #004200;}
+            header nav
+            {
+                padding-top: 2rem;
+                padding-bottom: 3.5rem;
+            }
+            header nav ul li
+            {
+                font-size: 20px; 
+                list-style-type: none; 
+                display: inline-block;
+                margin-inline: 20px;
+                float: right;
+            }
+            header nav ul li a 
+            {
+                text-decoration: none; 
+                color: #ff00d4;
+                font-weight: 1000;
+                background-color: #000522;
+                border: 5px solid #ffd000;
+                border-radius: 7px;
+                padding: 0.5rem 3rem;
+            }
+            header nav ul li a:hover,
+            header nav ul li a:focus {color: #ff0040; background-color: #070064; border: 5px solid green;}
+            header nav ul li a:active {color: #ffffff;}
+            /* Main Section */
+            main h1
+            {
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                color: #425eff;
+                text-shadow: 10px 10px 10px #1100ff;
+                text-decoration: underline;
+            }
+            main h2
+            {
+                color: #58e6ff;
+                text-shadow: 10px 10px 10px #00489b;
+            }
+            main ul 
+            {
+                border: 10px solid #7a007a;
+                border-radius: 40px;
+                max-width: 50%; 
+                margin: auto; 
+                font-size: 30px;
+            }
+            main ul li:first-child {border: none; border-radius: 30px 30px 0 0; background-color: #003632; padding: 2rem;}
+            main ul li:last-child {border-radius: 0px 0px 30px 30px;}
+            main ul li
+            {
+                list-style-type: none; 
+                text-align: center;
+                border-top: 5px solid #7a007a;
+                background-color: gold;
+            }
+            main ul li a
+            {
+                text-decoration: none;
+                color: #ff0062;
+                font-weight: 1000;
+                padding: 1rem;      
+                display: block;
+            }
+            main ul li a:hover,
+            main ul li a:focus {color: #5d52ff; background-color: #ffbb00;}
+            main ul li a:active {color: #ff0000;}
+            main ul li:last-child a:hover,
+            main ul li:last-child a:focus {border-radius: 0 0 30px 30px;}
+            /* Footer */
+            footer 
+            {
+                background-color: #202020;
+                width: 100%;
+                bottom: 0;
+                position: absolute;
+                padding: 1rem 0 1rem 0;
+                line-height: 1.5;
+            }
+            footer .div1 {text-align: center;}
+            footer .div1 ul {font-size: 20px; padding: 1rem;}
+            footer .div1 ul li {display: inline-block; margin-inline: 2rem;}
+            footer .div1 ul li a {color: #0084ff; text-decoration: none;}
+            footer .div1 ul li a:hover,
+            footer .div1 ul li a:focus {color: #001aff;}
+            footer .div1 ul li a:active {color: #ff0000;}
+            footer .flex-container1 {display: flex; justify-content: center;}
+            footer .flex-container1 div {text-align: left}
+            footer .flex-container2 {display: flex; justify-content: center;}
+            footer .flex-container2 div {text-align: left}
+        </style>
     </head>
-    <body>
-        <nav> <!--Create navigation-->
-            <ul>
-                <li><a href="index.html">Index</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-        <section>
+    <body class="f-fuzzy_bubbles">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
             <h1>Index Page</h1>
-            <div>
-                <h2>Div 1: This is the Index Page of the Website</h2>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
+            <section>
+                <ul>
+                    <li><h2>Main Menu</h2></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery Display</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>  
+        </main>
+        <footer>
+            <div class="div1">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <br><br>
-            <div>
-                <h2>Div 2: This is the Index Page of the Website</h2>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
+            <div class="flex-container1">
+                <div class="div"><p>Copyright &copy; 2024 - 2025. M3Project. All rights reserved.</p></div>
             </div>
-            <br><br>
-            <div>
-                <h2>Div 3: This is the Index Page of the Website</h2>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
+            <div class="flex-container2">
+                <div class="div"><p>Designed in VS Code.</p></div>
             </div>
-            <br><br>
-            <div>
-                <h2>Div 4: This is the Index Page of the Website</h2>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
-                <p>
-                    The index page is the main and first page loaded onto this website. Currently there is no useful content to display
-                    on this homepage. If you would like to see what other webpages exist on this site, click on the buttons located on
-                    the top navigation bar for more details and to select what other section of this website you would like to visit.
-                </p>
-            </div>
-        </section>
+        </footer>
     </body>
 </html>

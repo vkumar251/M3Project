@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>CSS Links | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            * {margin: 0; padding: 0; box-sizing: border-box;}
+            h1 {font-size: 40px; padding: 1rem;}
+            h2 {font-size: 30px; padding: 1rem;}
+            h3, p {font-size: 20px; padding: 1rem;}
+            a 
+            {
+                font-size: 20px; 
+                font-weight: 700; 
+                text-decoration: none;
+                background-color: #ffb444;
+                padding: 0.5vw;
+                text-align: center;
+                border: 3px solid black;
+                cursor: crosshair; /* change cursor when hovered */
+            }
+            /* anchor pseudo-classes - must be used in the following order: */
+            a:link {color: #00858f;} /* set default value for unvisited links */
+            a:visited {color: #005204;}
+            a:hover, a:focus {color: red; background-color: #ff6b6b; border: 3px groove #0044ff;}
+            a:active {color: blue;}
+
+            section h1 {color: #ff0080; text-align: justify; text-shadow: 5px 5px 5px #808080;}
+            section p {color: #5900ff; text-align: justify; text-decoration: none;}
+            /* structure */
+            body
+            {
+                background-color: #666666;
+                font-family: Arial;
+            }
+            section
+            {
+                border: 5px solid black;
+                border-radius: 20px;
+                background-color: white;
+                background-size: contain;
+                padding: 1rem;
+                margin: 5rem;
+                height: inherit;
+                width: inherit;
+            }
+            .action
+            {
+                border: 5px solid #00ff00;
+                outline: 5px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <section>
+                <h1>Section Element</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maiores quod sit incidunt inventore qui 
+                    debitis asperiores esse eveniet similique explicabo, iusto excepturi ipsam, facilis quisquam, iure quaerat 
+                    natus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae soluta asperiores 
+                    beatae consectetur hic laudantium inventore enim saepe, nostrum incidunt corporis molestiae fugiat harum magnam 
+                    voluptas praesentium maxime dolorem.
+                </p>
+                <a href="http://google.com", target="_blank">Click Here</a>
+            </section>
+            <section class="action">
+                <h1>Call to Action</h1>
+                <p>This is text for the page.</p>
+            </section>
+            <section>
+                <a href="http://google.com", target="_blank">Click Here</a>
+            </section>
+            
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
