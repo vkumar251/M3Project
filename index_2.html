@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Name | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            /* General */
+            html {scroll-behavior: smooth;}
+            h1 {font-size: 60px; text-align: center;}
+            h2 {font-size: 40px;}
+            h3, p {font-size: 20px;}
+            nav ul li {font-size: 20px;}
+            section ul li {font-size: 30px;}
+            body {
+                font-family: Arial; 
+                background-color: #000e33;
+                color: white;
+            }
+
+            /* Navigation */
+            header {background-color: #005d6d;}
+            header nav {
+                padding: 2rem;
+                padding-bottom: 3rem;
+            }
+            header nav ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin-inline: 20px;
+                float: right;
+            }
+            header nav ul li a {
+                text-decoration: none;
+                color: #ff002b;
+                background-color: #00290a;
+                border: 3px solid gold;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            header nav ul li a:hover,
+            header nav ul li a:focus {
+                background-color: #460046;
+                color: #ffffff;
+            }
+            header nav ul li a:active {color: #00ffd5;}
+            main h1 {
+                padding: 2rem;
+                color: #ff00ff;
+                text-shadow: 10px 10px 5px #5c0036;
+                text-decoration: underline;
+            }
+
+            /* Main contents */
+            main section {
+                margin: auto;
+                max-width: 60%;
+                border: 5px solid #00ff22;
+                border-radius: 40px;
+                text-align: center;
+            }
+            main section h2 {
+                color: #00d9ff;
+                text-shadow: 10px 10px 3px #004561;
+            }
+            main section ul li {
+                background-color: #292929;
+                border-top: 5px solid #00ff22;
+                list-style-type: none;
+            }
+            main section ul li:first-child { /* Sub-title */
+                background-color: #582800;
+                border-radius: 38px 38px 0 0;
+                padding: 2rem;
+                border: none;
+            }
+            main section ul li:last-child {
+                border-radius: 0 0 38px 38px;
+            }
+            main section ul li a { /* Menu buttons */
+                text-decoration: none;
+                color: #ff0095;
+                padding: 1rem;
+                display: block;
+            }
+            main section ul li a:hover,
+            main section ul li a:focus {
+                color: #31005f;
+                background-color: #005d6d;
+            }
+            main section ul li a:active {color: #5e00b6;}
+            main section ul li:last-child a:hover,
+            main section ul li:last-child a:focus {
+                border-radius: 0 0 38px 38px;
+                color: #31005f;
+            }
+            main section ul li:last-child a:active {color: #5e00b6;}
+
+            /* Footer */
+            footer {
+                background-color: #272727;
+                position: absolute;
+                min-width: 100%;
+                bottom: 0;
+                text-align: center;
+                padding: 2rem;
+            }
+            footer div {font-size: 25px;}
+            footer div ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin-inline: 20px;
+            }
+            footer div ul li a {
+                text-decoration: none;
+                color: #5151ff;
+            }
+            footer div ul li a:hover,
+            footer div ul li a:focus {color: #005d6d;}
+            footer div ul li a:active {color: #00d9ff;}
+            footer div .p1 {padding-top: 1.2rem;}
+            footer div .p2 {line-height: 1.5;}
+        </style>
+    </head>
+    <body class="f-fuzzy_bubbles">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Index Page</h1>
+            <section>
+                <ul>
+                    <li><h2>Main Menu</h2></li>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="#">index</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+               </ul>
+            </div>
+            <div>
+                <p class="p1">Copyright &copy; 2024 - 2025. MrProject. All rights reserved.</p>
+                <p class="p2">Designed in VS Code.</p>
+            </div>
+        </footer>
+    </body>
+</html>
