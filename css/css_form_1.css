@@ -1,0 +1,111 @@
+/* Contact section */
+main section.contact
+{
+    width: 50%;
+    margin: 8vh auto;
+    padding: 2rem;
+    background-color: rgb(47, 47, 61);
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 3px 25px rgb(165, 165, 165);
+    color: white;
+}
+main section.contact div.contact-box h2
+{
+    padding-bottom: 1rem;
+    color: rgb(148, 148, 148);
+    display: inline-block;
+}
+main section.contact div.contact-box form
+{
+    padding-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+main section.contact div.contact-box form input
+{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+}
+main section.contact div.contact-box form input.button
+{
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+
+/* Questions section */
+main section.questions
+{
+    width: 50%;
+    margin: 8vh auto;
+    padding: 2rem;
+    background-color: rgb(47, 47, 61);
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 3px 25px rgb(165, 165, 165);
+    color: white;
+}
+main section.questions div.questions-box h2
+{
+    padding-bottom: 1rem;
+    color: rgb(148, 148, 148);
+    display: inline-block;
+}
+main section.questions div.questions-box form
+{
+    padding-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.0;
+    margin: 0;
+}
+main section.questions div.questions-box form input
+{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+}
+main section.questions div.questions-box form input.button
+{
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+
+
+
+main section.checkbox-questions
+{
+    width: 50%;
+    margin: 8vh auto;
+    padding: 2rem;
+    background-color: rgb(47, 47, 61);
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 3px 25px rgb(165, 165, 165);
+    color: white;
+}
+main section.checkbox-questions div.checkbox-questions-box h2
+{
+    padding-bottom: 1rem;
+    color: rgb(148, 148, 148);
+    display: inline-block;
+}
+main section.checkbox-questions div.checkbox-questions-box form
+{
+    padding-bottom: 2rem;
+    font-size: 20px;
+    line-height: 1.0;
+    margin: 0;
+}
+main section.checkbox-questions div.checkbox-questions-box form input
+{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px;
+}
+main section.checkbox-questions div.checkbox-questions-box form input.button
+{
+    position: relative;
+    left: -10px;
+    top: -10px;
+}

@@ -1,0 +1,92 @@
+h1 {font-size: 40px;}
+h2 {font-size: 30px;}
+h3, p {font-size: 20px;}
+body 
+{
+    font-family: Arial; 
+    background-color: #666666;
+
+    /* adjust body to flexbox, for ensuring footer stays at bottom of page*/
+    /* flex: 1; - required in main selector */
+    /* apply relative position to footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+/* navigation */
+header
+{
+    background-color: #3b3b3b;
+    width: 100%;
+    padding: 15px;
+}
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+header nav ul li {font-size: 20px;}
+header nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover,
+header nav ul li a:focus
+{
+    color: #625fff;
+    transition: color 0.3s ease;
+}
+header nav ul li a:active {color: #1900ff;}
+
+/* main */
+main {flex: 1;}
+
+/* footer */
+footer
+{
+    position: relative;
+    bottom: 0;
+    background-color: #3b3b3b;
+    width: 100%; 
+    padding: 15px;
+}
+footer div#copyright {margin-bottom: 20px;}
+footer div#copyright p {text-align: center; color: white; font-size: 25px;}
+footer div#footer-nav {margin-bottom: 20px;}
+footer div#footer-nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+footer div#footer-nav ul li {font-size: 15px;}
+footer div#footer-nav ul li a {text-decoration: none; color: white;}
+footer div#footer-nav ul li a:hover,
+footer div#footer-nav ul li a:focus
+{
+    color: #625fff;
+    transition: color 0.3s ease;
+}
+footer div#footer-nav ul li a:active {color: #1900ff;}
+footer div#social-media ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+footer div#social-media ul li {font-size: 20px;}
+footer div#social-media ul li a {text-decoration: none; color: white;}
+footer div#social-media ul li a:hover,
+footer div#social-media ul li a:focus
+{
+    color: #625fff;
+    transition: color 0.3s ease;
+}
+footer div#social-media ul li a:active {color: #1900ff;}

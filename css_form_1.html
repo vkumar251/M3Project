@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Form | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="css/css_form_1.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--contact form-->
+            <section class="contact">
+                <div class="contact-box">
+                    <h2>Send us a message:</h2>
+                    <form id="basic_form", action="form-handler.php"> <!--note: php must run on a server to operate-->
+                        <label for="firstname">First Name:</label> <!--first name-->
+                        <!--id firstname gets linked to label (for)-->
+                        <input type="text", id="firstname", name="firstname", value="David"><br>
+                        <label for="lastname">Last Name</label> <!--last name-->
+                        <input type="text", id="lastname", name="lastname", value="Smith"><br>
+                        <input type="submit", value="Submit", class="button">
+                    </form>
+                    <form id="login_form">
+                        <label for="username">Username:</label>
+                        <input type="text", id="username", name="username"><br>
+                        <label for="password">Password:</label>
+                        <input type="text", id="password", name="password"><br>
+                        <input type="submit", value="Login", class="button">
+                    </form>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="questions-box">
+                    <h2>Do you consent to us processing your data:</h2>
+                    <form id="consent_form", action="consent-form-handler.php">
+                        <input type="radio", id="consent_yes", name="consent_yes", value="Yes">
+                        <label for="consent_yes">Yes</label><br>
+                        <input type="radio", id="consent_no", name="consent_no", value="No">
+                        <label for="consent_no">No</label><br><br>
+                        <input type="submit", value="Submit", class="button">
+                    </form>
+                </div>
+            </section>
+            <section class="checkbox-questions">
+                <div class="checkbox-questions-box">
+                    <h2>Tick all your favourite colours:</h2>
+                    <form id="checkbox", action="checkbox-form-handler.php">
+                        <input type="checkbox", id="colours_yellow", name="colours_yellow", value="Yellow">
+                        <label for="colours_yellow">Yellow</label><br>
+                        <input type="checkbox", id="colours_green", name="colours_green", value="Green">
+                        <label for="colours_green">Green</label><br>
+                        <input type="checkbox", id="colours_red", name="colours_red", value="Red">
+                        <label for="colours_red">Red</label><br>
+                        <input type="checkbox", id="colours_blue", name="colours_blue", value="Blue">
+                        <label for="colours_blue">Blue</label><br><br>
+                        <input type="submit", value="Submit", class="button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2022 - 2025. All rights reserved.</p>
+            </div>
+            <div id="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
