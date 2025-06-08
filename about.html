@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en"> <!--Set default language to English-->
+<html lang="en">
     <head>
-        <link rel="stylesheet", href="css/style.css"> <!--Import style.css into page-->
-        <meta charset="UTF-8"> <!--Encode unicode transformation format to 8, to make it accessible for all languages-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Optimise page to make it accessible
-        on smartphones and other electronic devices-->
-        <title>About | My Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>About | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="css/about.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
-        <nav> <!--Create navigation-->
-            <ul>
-                <li><a href="index.html">Index</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h1>About Page</h1>
-            <div>
-                <p>This is the about page of the website.</p>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--About-->
+            <section class="about-container">
+                <div class="column">
+                    <img src="images/stocks/nature/sunset_landscape.jpg", title="Grass fields", alt="Image of grass fields.">
+                </div>
+                <div class="column">
+                    <div class="about">
+                        <h2>About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, autem. Tempora officiis error dolor facilis
+                            laboriosam quasi consequuntur ipsam, ipsum nam, maxime explicabo voluptatibus architecto officia sint nisi voluptatum
+                            reprehenderit. Deleniti nostrum dignissimos officiis ipsam asperiores vero sed totam expedita atque quam modi
+                            praesentium sunt, nam nulla harum accusamus corrupti, excepturi, aspernatur quibusdam necessitatibus quo. Deleniti,
+                            suscipit ratione. Odio, quidem!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, autem. Tempora officiis error dolor facilis
+                            laboriosam quasi consequuntur ipsam, ipsum nam, maxime explicabo voluptatibus architecto officia sint nisi voluptatum
+                            reprehenderit. Deleniti nostrum dignissimos officiis ipsam asperiores vero sed totam expedita atque quam modi
+                            praesentium sunt, nam nulla harum accusamus corrupti, excepturi, aspernatur quibusdam necessitatibus quo. Deleniti,
+                            suscipit ratione. Odio, quidem!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, autem. Tempora officiis error dolor facilis
+                            laboriosam quasi consequuntur ipsam, ipsum nam, maxime explicabo voluptatibus architecto officia sint nisi voluptatum
+                            reprehenderit. Deleniti nostrum dignissimos officiis ipsam asperiores vero sed totam expedita atque quam modi
+                            praesentium sunt, nam nulla harum accusamus corrupti, excepturi, aspernatur quibusdam necessitatibus quo. Deleniti,
+                            suscipit ratione. Odio, quidem!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Call to action-->
+            <section class="cta-container">
+                <h2>Ready to start your adventure?</h2>
+                <button>Book Now</button>
+            </section>
+        </main>
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2022 - 2025. All rights reserved.</p>
             </div>
-        </section>
+            <div id="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

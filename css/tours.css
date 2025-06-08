@@ -1,0 +1,37 @@
+main section 
+{
+    margin: 4rem;
+    background-color: grey;
+    box-shadow: 5px 10px 5px rgb(56, 56, 56);
+}
+main section div 
+{
+    margin: 0 2rem;
+    padding: 20px;
+    line-height: 1.5;
+    overflow: auto;
+}
+main section div h1 
+{
+    font-size: 30px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+main section div button
+{
+    font-size: 20px;
+    padding: 10px 40px;
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+    color: white;
+    float: right;
+}
+main section div button:hover,
+main section div button:focus
+{
+    background-color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+

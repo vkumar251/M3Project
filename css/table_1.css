@@ -1,0 +1,21 @@
+main section.chapter
+{
+    padding: 40px;
+}
+main section.chapter table.custom
+{
+    width: 100%;
+    border-collapse: collapse; /* set whether border should collapse or not */
+    background-color: rgb(136, 136, 136);
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+main section.chapter table.custom tr {font-family: Arial;}
+/* main section.chapter table.custom tr:first-child {font-weight: 800; background-color: rgb(0, 160, 172);} */
+main section.chapter table.custom th {font-weight: 800; background-color: rgb(197, 151, 0);}
+main section.chapter table.custom th,
+main section.chapter table.custom td
+{
+    padding: 10px;
+    border: 2px solid rgb(0, 15, 83); /* set border style */
+}

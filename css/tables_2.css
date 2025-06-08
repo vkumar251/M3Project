@@ -1,0 +1,30 @@
+main section
+{
+    color: white;
+    background-color: rgb(45, 0, 56);
+    box-shadow: 0 0 20px rgb(204, 0, 255);
+    width: 70%;
+    margin: 10vh auto;
+    padding: 20px;
+}
+main section h1
+{
+    text-align: center;
+    color: white;
+}
+main section hr {border: 2px solid rgb(128, 128, 128); margin-bottom: 2rem; margin-top: 1rem;}
+main section table
+{
+    width: 80%;
+    margin: 3vh auto;
+    border-collapse: collapse;
+}
+main section table th, 
+main section table td
+{
+    text-align: left;
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+main section table th {text-align: center; background-color: rgb(0, 87, 90);}
+main section table td {background-color: rgb(49, 49, 49);}
