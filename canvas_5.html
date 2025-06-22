@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            canvas {border: 4px solid black; margin: 4rem;}
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Canvas - Click and draw:</h1>
+            <canvas id="testCanvas", width="800", height="400"></canvas>
+        </main>
+        <script>
+            // setup variables
+            const canvas = document.getElementById("testCanvas");
+            const ctx = canvas.getContext("2d");
+            let isDrawing = false;
+
+            // draw when mouse is held down
+            canvas.addEventListener("mousedown", function(event)
+            {
+                isDrawing = true;
+                draw(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop)
+            });
+
+            // continue drawing when mouse is moved while held down
+            canvas.addEventListener("mousemove", function(event) 
+            {
+                if (isDrawing)
+                {
+                    draw(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+                }
+            });
+
+            // stop drawing when mouse is released
+            canvas.addEventListener("mouseup", function()
+            {
+                isDrawing = false;
+            });
+            function draw(x, y)
+            {
+                ctx.fillStyle = "gold";
+                ctx.fillRect(x, y, 20, 20);
+            }
+        </script>
+    </body>
+</html>

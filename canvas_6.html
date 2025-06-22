@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            canvas {border: 1px solid black; margin: 4rem;}
+        </style>
+    </head>
+    <body>
+        <main>
+            <canvas id="testCanvas", width="400", height="200"></canvas>
+        </main>
+        <script>
+            const canvas = document.getElementById("testCanvas");
+            const ctx = canvas.getContext("2d");
+            const img = new Image(); // create new (object) image
+            img.src = "images/stocks/data/data_fabric.jpg"; // set image source
+
+            // draw image on canvas, when loaded
+            img.onLoad = function()
+            {
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            }
+
+            // click event listener to spin image
+            canvas.addEventListener("click", function()
+            {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                const angle = 0;
+                rotateImage(img, angle);
+            });
+
+            // rotate image
+            function rotateImage(image, angle)
+            {
+                ctx.save();
+                ctx.translate(canvas.width / 2, canvas.height / 2);
+                ctx.rotate((angle * Math.PI) / 180);
+                ctx.drawImage
+                (
+                    image,
+                    -canvas.width / 2,
+                    -canvas.height / 2,
+                    canvas.width, 
+                    canvas.height
+                );
+                ctx.restore();
+            }
+
+            // increment angle for next rotation
+            const newAngle = angle + 10;
+            if (newAngle < 360)
+            {
+                setTimeout(function()
+                {
+                  rotateImage(image, newAngle);  
+                }, 100);
+            }
+        </script>
+    </body>
+</html>

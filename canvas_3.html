@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            h1
+            {
+                color: white;
+                position: relative;
+                z-index: 1;
+            }
+            canvas 
+            {
+                border: 1px solid black;
+                position: absolute;
+                top: 0;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Canvas</h1>
+            <canvas id="testCanvas", width="800", height="400"></canvas>
+        </main>
+        <script>
+            const canvas = document.getElementById("testCanvas");
+            const ctx = canvas.getContext("2d");
+
+            // Create linear gradient
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, "blue"); // start colour
+            gradient.addColorStop(0.5, "gold"); // midpoint colour
+            gradient.addColorStop(1, "red"); // end colour
+
+            // Fill rectangle with gradient
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        </script>
+    </body>
+</html>

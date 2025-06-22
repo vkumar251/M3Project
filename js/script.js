@@ -1,4 +1,3 @@
-
 function changeTag()
 {
     // Create two variables for storing the old and new elements

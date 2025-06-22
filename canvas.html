@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            canvas {border: 1px solid black; margin: 4rem;}
+        </style>
+    </head>
+    <body>
+        <main>
+            <!--Use js to draw a gold rectangle-->
+            <canvas id="testCanvas", width="400", height="200"></canvas>
+        </main>
+        <script>
+            // Create 2 constant (non-changing) variables
+            const canvas = document.getElementById("testCanvas"); // get the canvas element
+            const ctx = canvas.getContext("2d"); // get 2d rendering context
+            ctx.fillStyle = "gold"; //set fill style property to green
+            ctx.fillRect(20, 10, 250, 100); //draw and fill a rectangle
+        </script>
+    </body>
+</html>

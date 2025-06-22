@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            canvas {border: 2px solid red; margin: 4rem;}
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Canvas - Click to place dots:</h1>
+            <canvas id="testCanvas", width="800", height="400"></canvas>
+        </main>
+        <script>
+            const canvas = document.getElementById("testCanvas");
+            const ctx = canvas.getContext("2d");
+
+            canvas.addEventListener("click", function(event) // execute event when user clicks
+            {
+                // get click coordinates
+                const x = event.clientX - canvas.offsetLeft;
+                const y = event.clientY - canvas.offsetTop;
+
+                // draw circle where user clicked
+                ctx.beginPath();
+                ctx.arc(x, y, 20, 0, 2 * Math.PI);
+                ctx.fillStyle = "gold";
+                ctx.fill();
+            });
+        </script>
+    </body>
+</html>

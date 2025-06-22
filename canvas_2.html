@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Canvas | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            canvas {border: 1px solid black; margin: 4rem;}
+        </style>
+    </head>
+    <body>
+        <main>
+            <canvas id="testCanvas", width="400", height="200"></canvas>
+        </main>
+        <script>
+            // constant variables setup
+            const canvas = document.getElementById("testCanvas");
+            const ctx = canvas.getContext("2d");
+
+            // variables configuration
+            ctx.fillStyle = "rgb(0, 31, 2)";
+            ctx.beginPath(); // start new path
+            ctx.arc(85, 50, 40, 0, (Math.PI * 2)); // draw circle at coordinates (85, 50) with radius 40
+            ctx.fill(); // fill the circle
+        </script>
+    </body>
+</html>
