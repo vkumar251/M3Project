@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>iFrame | M3Project</title>
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="css/reset.css">
+        <link rel="stylesheet", href="css/body.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <style>
+            .iframe-container
+            {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                margin: 2rem 0;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .iframe-container iframe
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            /* responsive adjustments */
+            /* adjust aspect ratio for mobile */
+            @media (max-width: 768px) {.iframe-container {padding-bottom: 75%;}}
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 style="text-align: center; margin: 2rem;">iFrame Map: London Eye</h1>
+            <div style="width: 50%; margin: auto;">
+                    <iframe title="Google Maps Location"
+                    width="100%"
+                    height="600"
+                    loading="lazy"
+                    allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade"
+                    sandbox="allow-scripts allow-same-origin allow-popups"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Riverside%20Building,%20County%20Hall,
+                    %20London%20SE1%207PB+(London%20Eye)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <p>Your browser does not support iframes. Please visit our <a href="location-link">location page</a>.</p>
+                    </iframe>
+                </div>
+                <div class="iframe-controls">
+                    <button onClick="reloadFrame()">Reload Map</button>
+                    <button onClick="toggleFullScreen()">Full Screen</button>
+                </div>
+        </main>
+        <footer>
+            <div id="copyright">
+                <p>Copyright &copy; 2022 - 2025. All rights reserved.</p>
+            </div>
+            <div id="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            function reloadFrame()
+            {
+                const frame = document.querySelector("iframe");
+                frame.src = frame.src;
+            }
+            function toggleFullScreen()
+            {
+                const frame = document.querySelector("iframe");
+                if (frame.requestFullscreen) 
+                {
+                    frame.requestFullscreen();
+                }
+            }
+        </script>
+    </body>
+</html>
