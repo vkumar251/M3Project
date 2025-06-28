@@ -1,0 +1,6 @@
+body {background-color: white;}
+header, footer {background-color: #a5a5a5;}
+header nav ul li a {color: black;}
+footer div#footer-nav ul li a,
+footer div#social-media ul li a,
+footer div#copyright p {color: black;}
